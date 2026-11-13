@@ -155,7 +155,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr}
-  header.hero{background:linear-gradient(180deg,rgba(10,26,46,.9),rgba(14,42,71,.94)),url(assets/hero-bg.jpg) 44% 40%/cover no-repeat}
+  
   .photo{order:-1}
 }
 @media (max-width:640px){
@@ -169,7 +169,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .grid{grid-template-columns:1fr}
   .grp-head .count{display:none}
 }
-header.hero{background:linear-gradient(100deg,rgba(10,26,46,.94) 0%,rgba(14,42,71,.86) 45%,rgba(14,42,71,.62) 100%),url(assets/hero-bg.jpg) center 35%/cover no-repeat}
+
 header.hero::after{opacity:.5}
 .stat{background:rgba(10,29,51,.75);border-color:rgba(217,178,95,.35)}
 .stat .n{color:#fff}
@@ -197,7 +197,6 @@ header.hero::after{opacity:.5}
   .hero .wrap{max-width:none;padding:0 clamp(28px,4vw,64px)}
   .hero-grid{grid-template-columns:minmax(0,620px) 1fr 360px;gap:24px}
   .hero-grid>.photo{grid-column:3}
-  header.hero{background:linear-gradient(90deg,rgba(9,24,43,.96) 0%,rgba(10,26,46,.9) 36%,rgba(14,42,71,.28) 50%,rgba(14,42,71,.22) 62%,rgba(14,42,71,.7) 74%,rgba(10,26,46,.85) 100%),url(assets/hero-bg.jpg) 0% 42%/130% auto no-repeat,#0e2a47}
 }
 /* slightly larger type */
 body{font-size:16px}
@@ -227,25 +226,100 @@ footer{font-size:14px}
 @media (max-width:900px){.contact .brk{display:none}}
 @media (min-width:901px){.contact{flex-wrap:nowrap;gap:8px}.contact a{flex:0 1 auto;min-width:0}.contact span.v{overflow:hidden;text-overflow:ellipsis}}
 @media (min-width:901px) and (max-width:1400px){.contact a{padding:5px 10px 5px 5px;gap:7px}.contact .ic{width:26px;height:26px}.contact span.v{font-size:12.5px}.contact small{font-size:10px}}
+
+/* ================= MINIMAL (Integron style) ================= */
+:root{--navy:#1d2f52;--amber:#ffc24d;--coral:#ff9a5c;--bg:#faf9f6;--ink:#1c2333}
+body{background:var(--bg)}
+h1,.grp-head h2,.stat .n,.lb figcaption,#end b{font-family:Manrope,system-ui,sans-serif !important}
+.topnav{position:sticky;top:0;z-index:40;background:#17264a;color:#fff}
+.topnav .wrap{max-width:none;padding:0 clamp(28px,4vw,64px);height:58px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;text-decoration:none;color:#fff}
+.dots{display:flex;gap:5px}.dots i{width:10px;height:10px;border-radius:50%;display:block;background:#3b82c4}.dots i:nth-child(2){background:#e0423a}.dots i:nth-child(3){background:#f6c34a}
+.tl{display:flex;gap:28px}.tl a{color:#d7deea;text-decoration:none;font-size:15.5px;font-weight:500;transition:color .2s}.tl a:hover{color:var(--amber)}
+header.hero{background:var(--navy) !important;padding:64px 0 120px}
+header.hero::after{display:none}
+.eyebrow{color:#9fb3d1;font-size:13px}.eyebrow::before{background:var(--amber)}
+h1{font-weight:800 !important;letter-spacing:-.035em;font-size:clamp(40px,5.6vw,66px) !important;line-height:1.05;margin:14px 0 18px}
+h1 em{background:none !important;-webkit-text-fill-color:initial;color:var(--amber) !important;font-style:normal}
+h1 em{background:linear-gradient(90deg,var(--amber),var(--coral)) !important;-webkit-background-clip:text !important;background-clip:text !important;color:transparent !important}
+.lede{font-size:19px;line-height:1.65;color:#cfd8e6;max-width:640px;margin:0 0 28px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.cta a{font-weight:700;font-size:16px;text-decoration:none;padding:14px 24px;border-radius:10px;transition:transform .25s var(--ease),box-shadow .25s,background .25s}
+.cta .b1{background:var(--amber);color:#1b2433;box-shadow:0 12px 26px -14px rgba(255,194,77,.8)}
+.cta .b1:hover{transform:translateY(-3px);box-shadow:0 18px 30px -14px rgba(255,194,77,.9)}
+.cta .b2{border:1px solid rgba(255,255,255,.35);color:#fff}
+.cta .b2:hover{background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.focus span{background:transparent !important;border:1px solid rgba(255,255,255,.28) !important;color:#e6ecf5 !important;font-weight:500 !important}
+.focus span:hover{border-color:var(--amber) !important;background:rgba(255,194,77,.08) !important}
+.photo .glow{background:linear-gradient(135deg,var(--amber),var(--coral)) !important;opacity:.85}
+.contact{border-top:1px solid rgba(255,255,255,.12);margin-top:40px}
+.contact a{background:transparent !important;border:1px solid rgba(255,255,255,.2) !important}
+.contact a:hover{border-color:var(--amber) !important;background:rgba(255,255,255,.05) !important}
+.ic.call{background:var(--amber)}
+/* stat band */
+.statband{margin-top:-78px;position:relative;z-index:5}
+.statband .wrap{max-width:1200px}
+.statband .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:0}
+.statband .stat{background:#fff !important;border:1px solid #ece8df !important;border-radius:16px;padding:24px 24px 22px;position:relative;overflow:hidden;box-shadow:0 18px 40px -26px rgba(29,47,82,.45);min-width:0;backdrop-filter:none}
+.statband .stat::before{content:"";position:absolute;left:0;right:0;top:0;height:5px}
+.s1::before{background:#3b82c4}.s2::before{background:#e0423a}.s3::before{background:#f6c34a}.s4::before{background:#6fc2a5}
+.statband .stat .n{font-size:40px !important;font-weight:800;color:#1c2333 !important;letter-spacing:-.03em}
+.statband .stat .l{font-size:15px !important;color:#6b7384 !important;margin-top:8px;line-height:1.5}
+.statband .stat:hover{transform:translateY(-5px);border-color:#e1dbcf !important}
+.toolbar{background:rgba(250,249,246,.94) !important;margin-top:34px;top:58px !important}
+html{scroll-padding-top:130px}
+.grp-head h2{font-weight:800 !important;letter-spacing:-.02em;font-size:30px !important}
+.grp-head p{font-size:15px}
+.grp-head::before{content:attr(data-k);display:none}
+.card{border-color:#ece8df !important;box-shadow:0 10px 26px -22px rgba(29,47,82,.4)}
+.card h3{font-weight:800 !important}
+@media (max-width:900px){
+  .tl{display:none}
+  .lede{font-size:16.5px}
+  header.hero{padding:40px 0 100px}
+  .statband .stats{grid-template-columns:1fr 1fr;gap:12px}
+  .statband .stat .n{font-size:30px !important}
+}
+.memo{padding:44px 0 6px}
+.memo-head span{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#3b82c4;margin-bottom:14px}
+.memo-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.memo-card.lab .memo-img{background-image:url(assets/lab/supplement-jars.jpg)}
+.memo-card{display:grid;grid-template-columns:1fr 1fr;border-radius:18px;overflow:hidden;text-decoration:none;background:#1d2f52;color:#fff;box-shadow:0 20px 44px -26px rgba(29,47,82,.6);transition:transform .35s var(--ease)}
+.memo-card:hover{transform:translateY(-5px)}
+.memo-img{min-height:200px;background:url(assets/memories/innovation-fair-2026.jpg) center 40%/cover;transition:transform .8s var(--ease)}
+.memo-card:hover .memo-img{transform:scale(1.04)}
+.memo-txt{padding:24px 26px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.memo-txt .mk{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#ffc24d}
+.memo-txt b{font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.memo-txt span:last-child{color:#cfd8e6;font-size:15.5px}
+@media (max-width:860px){.memo-grid{grid-template-columns:1fr}.memo-img{min-height:180px}}
+/* contact: mature, borderless */
+.contact{display:grid !important;grid-template-columns:1.15fr 1.6fr 1fr 1.1fr .95fr .8fr;gap:10px !important;border-top:none !important;margin-top:36px !important;padding-top:0 !important;flex-wrap:initial !important}
+.contact a{background:rgba(255,255,255,.055) !important;border:none !important;border-radius:12px;padding:10px 12px !important;gap:10px !important;min-width:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.contact a:hover{background:rgba(255,255,255,.1) !important;box-shadow:inset 0 -2px 0 var(--amber) !important}
+.contact a>span:last-child{min-width:0}
+.contact span.v{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;font-size:13.5px !important}
+.contact small{color:#8fa2bf !important;letter-spacing:.06em}
+.contact .ic{width:32px !important;height:32px !important;border-radius:9px !important}
+@media (max-width:1480px){.contact{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:700px){.contact{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
+<nav class="topnav"><div class="wrap">
+  <a class="brand" href="#"><span class="dots"><i></i><i></i><i></i></span>Md. Al Hadi Islam</a>
+  <div class="tl"><a href="memories.html">Innovation Fair</a><a href="research.html">Prebiotics Lab</a><a href="#all">Certificates</a><a href="#contact">Contact</a><a href="https://github.com/HadiRownok" target="_blank" rel="noopener">GitHub</a></div>
+</div></nav>
 <header class="hero">
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Professional Development</span>
-        <h1>Licenses &amp; <em>Certifications</em></h1>
-        <p class="who">Md. Al Hadi Islam</p>
-        <p class="dept">Department of Microbiology, Jashore University of Science and Technology<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Jashore, Bangladesh</p>
+        <span class="eyebrow">Md. Al Hadi Islam · Microbiology, JUST</span>
+        <h1>Licenses &amp; <em>Certifications.</em></h1>
+        <p class="lede">Courses and credentials I completed alongside my microbiology studies at Jashore University of Science and Technology — data science with Python, Linux and cloud, generative AI, and advanced English communication.</p>
+        <div class="cta"><a class="b1" href="#all">View certificates →</a><a class="b2" href="https://www.linkedin.com/in/md-al-hadi-islam" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
         <div class="focus"><span>Metagenomics</span><span>Probiotics</span><span>Prebiotics</span><span>WGS</span><span>AMR</span><span>Docking &amp; MD</span><span>Data Science</span></div>
-        <div class="stats">
-          <div class="stat"><div class="n">26</div><div class="l">Certificates</div></div>
-          <div class="stat"><div class="n">11</div><div class="l">Issuing organizations</div></div>
-          <div class="stat"><div class="n">4</div><div class="l">IBM credentials</div></div>
-          <div class="stat"><div class="n">C1</div><div class="l">English level</div></div>
-        </div>
       </div>
       <div class="photo">
         <div class="glow"></div>
@@ -254,7 +328,7 @@ footer{font-size:14px}
       </div>
     </div>
 
-    <nav class="contact" aria-label="Contact">
+    <nav class="contact" id="contact" aria-label="Contact">
       <a href="mailto:hadirownok@gmail.com"><span class="ic mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><span class="v">hadirownok@gmail.com</span></span></a>
       <a href="mailto:200335.mb@student.just.edu.bd"><span class="ic uni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><span><small>University email</small><span class="v">200335.mb@student.just.edu.bd</span></span></a>
       <a href="https://wa.me/8801740724089" target="_blank" rel="noopener"><span class="ic wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.68L.57 23.3l5.68-1.49a11.3 11.3 0 0 0 5.78 1.6h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.89-3.34-8.04z"/></svg></span><span><small>WhatsApp</small><span class="v">+880 1740-724089</span></span></a>
@@ -265,7 +339,19 @@ footer{font-size:14px}
   </div>
 </header>
 
-<div class="toolbar">
+<section class="statband"><div class="wrap"><div class="stats">
+  <div class="stat s1"><div class="n">26</div><div class="l">certificates across data, cloud, AI and communication</div></div>
+  <div class="stat s2"><div class="n">11</div><div class="l">issuing organizations, from IBM to the British Council</div></div>
+  <div class="stat s3"><div class="n">4</div><div class="l">IBM credentials in Python, Linux and cloud</div></div>
+  <div class="stat s4"><div class="n">C1</div><div class="l">advanced English, British Council English Online</div></div>
+</div></div></section>
+<section class="memo"><div class="wrap"><div class="memo-head"><span>Beyond the certificates</span></div><div class="memo-grid">
+<a class="memo-card" href="memories.html"><div class="memo-img"></div>
+  <div class="memo-txt"><span class="mk">Memories · 2026</span><b>Bangladesh Innovation Fair 2026</b><span>JUST — Champion. See the photos →</span></div></a>
+<a class="memo-card lab" href="research.html"><div class="memo-img"></div>
+  <div class="memo-txt"><span class="mk">Research · Lab work</span><b>Prebiotic Formulation</b><span>From plant to an organic, AMR-free supplement →</span></div></a>
+</div></div></section>
+<div class="toolbar" id="all">
   <div class="wrap">
     <div class="chips" id="chips"></div>
     <label class="search">
@@ -279,6 +365,7 @@ footer{font-size:14px}
   <div class="wrap" id="root"></div>
   <div class="wrap empty" id="empty">No certificates match your search.</div>
 </main>
+
 
 <footer>
   <div class="wrap">
@@ -338,7 +425,7 @@ function render(){
     const items = DATA.filter(c => c.g===g && match(c));
     total += items.length;
     if(!items.length) return "";
-    return `<section class="grp" style="--c:${COLORS[g]}">
+    return `<section class="grp" id="${g}" style="--c:${COLORS[g]}">
       <div class="grp-head"><div class="grp-icon" style="background:${COLORS[g]}">${ICON[g]}</div>
         <div><h2>${title}</h2><p>${sub}</p></div><span class="count">${items.length} certificate${items.length>1?"s":""}</span></div>
       <div class="grid">${items.map(c=>card(c,g)).join("")}</div></section>`;
