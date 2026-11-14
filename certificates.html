@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Training — Md. Al Hadi Islam</title>
+<meta name="description" content="26 certificates from IBM, British Council, Cisco, HP LIFE, AI CERTs and more — data science with Python, Linux &amp; cloud, generative AI and advanced English communication.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hadirownok.github.io/">
+<meta property="og:title" content="Professional Training — Md. Al Hadi Islam">
+<meta property="og:description" content="26 certificates from IBM, British Council, Cisco, HP LIFE, AI CERTs and more — data science with Python, Linux &amp; cloud, generative AI and advanced English communication.">
+<meta property="og:image" content="https://hadirownok.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/profile.jpg"><link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230e2a47'/><text x='32' y='42' font-size='28' text-anchor='middle' fill='%23e9c46a' font-family='Georgia' font-weight='bold'>HI</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e2a47; --navy2:#16395e; --ink:#1d2433; --muted:#5d6676; --line:#e4e0d6;
+  --bg:#f6f4ef; --card:#ffffff; --gold:#d9b25f;
+  --ibm:#1f4fbf; --bc:#5b3a8e; --pro:#0f766e; --prog:#b4532a; --tms:#a8323e;
+  --radius:14px; --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ---------- hero ---------- */
+header.hero{background:radial-gradient(1100px 420px at 85% -10%,rgba(217,178,95,.22),transparent 60%),
+  radial-gradient(800px 380px at 0% 110%,rgba(15,118,110,.35),transparent 60%),
+  linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:56px 0 46px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:36px 36px;mask-image:linear-gradient(180deg,#000 30%,transparent);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:48px;align-items:center}
+
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.08;margin:12px 0 12px;letter-spacing:-.01em}
+h1 em{font-style:normal;background:linear-gradient(90deg,#f1d08a,var(--gold) 45%,#7fd1c7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.who{font-size:20px;color:#fff;margin:0;font-weight:800;letter-spacing:-.01em}
+.dept{font-size:15px;color:#c9d5e4;margin:4px 0 0}
+.dept svg{width:14px;height:14px;vertical-align:-2px;margin:0 4px 0 10px;color:var(--gold)}
+.focus{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.focus span{font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#e8eef6;transition:transform .25s var(--ease),background .25s,border-color .25s}
+.focus span:hover{transform:translateY(-3px);background:rgba(217,178,95,.18);border-color:rgba(217,178,95,.55)}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:12px 18px;min-width:118px;backdrop-filter:blur(4px);transition:transform .3s var(--ease),border-color .3s,background .3s}
+.stat:hover{transform:translateY(-4px);border-color:rgba(217,178,95,.6);background:rgba(255,255,255,.11)}
+.stat .n{font-family:"Source Serif 4",Georgia,serif;font-size:28px;font-weight:700;line-height:1;color:#fff}
+.stat .l{font-size:12px;color:#b9c6d6;margin-top:6px;letter-spacing:.02em}
+
+/* photo */
+.photo{position:relative;justify-self:center;width:340px;height:370px}
+.photo .glow{position:absolute;inset:18px -6px -10px 10px;background:linear-gradient(135deg,var(--gold),#0f766e);filter:blur(2px);opacity:.9;
+  border-radius:62% 38% 37% 63% / 49% 58% 42% 51%;animation:morph2 11s ease-in-out infinite;transition:transform .6s var(--ease)}
+.photo .frame{position:absolute;inset:0;overflow:hidden;border:5px solid rgba(255,255,255,.95);box-shadow:0 30px 60px -25px rgba(0,0,0,.65);
+  border-radius:38% 62% 63% 37% / 41% 44% 56% 59%;animation:morph 9s ease-in-out infinite;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.photo .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block;transition:transform .8s var(--ease)}
+.photo:hover .frame{transform:translateY(-8px) rotate(-2deg);box-shadow:0 40px 70px -25px rgba(217,178,95,.55)}
+.photo:hover .frame img{transform:scale(1.07)}
+.photo:hover .glow{transform:rotate(8deg) scale(1.04)}
+@keyframes morph{0%,100%{border-radius:38% 62% 63% 37% / 41% 44% 56% 59%}50%{border-radius:58% 42% 40% 60% / 52% 58% 42% 48%}}
+@keyframes morph2{0%,100%{border-radius:62% 38% 37% 63% / 49% 58% 42% 51%}50%{border-radius:40% 60% 62% 38% / 58% 42% 58% 42%}}
+.contact a.c1{background:linear-gradient(135deg,rgba(124,77,214,.35),rgba(91,58,142,.25));border-color:rgba(190,160,240,.45);padding:5px 14px 5px 6px}
+.contact a.c1 img{width:40px;height:40px;transition:transform .5s var(--ease)}
+.contact a.c1:hover{border-color:rgba(217,178,95,.7)}
+.contact a.c1:hover img{transform:rotate(-12deg) scale(1.12)}
+
+/* contact bar */
+.contact{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:10px}
+.contact a{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff;text-decoration:none;
+  transition:transform .3s var(--ease),background .3s,border-color .3s}
+.contact a:hover{transform:translateY(-4px);background:rgba(255,255,255,.12);border-color:rgba(217,178,95,.6)}
+.contact .ic{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex:none;transition:transform .35s var(--ease)}
+.contact a:hover .ic{transform:rotate(-8deg) scale(1.1)}
+.contact .ic svg{width:16px;height:16px}
+.contact small{display:block;font-size:10.5px;color:#a9b8cb;line-height:1.2;letter-spacing:.03em;text-transform:uppercase}
+.contact span.v{display:block;font-size:13px;font-weight:600}
+.ic.mail{background:#d14836}.ic.uni{background:#0f766e}.ic.li{background:#0a66c2}.ic.rg{background:#00b3a4}.ic.gh{background:#fff;color:#1f2328}
+.rgtxt{font-weight:800;font-size:12px;color:#fff}
+
+/* ---------- toolbar ---------- */
+.toolbar{position:sticky;top:0;z-index:20;background:rgba(246,244,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.toolbar .wrap{display:flex;gap:14px;align-items:center;padding-top:12px;padding-bottom:12px}
+.chips{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none;padding:2px 0}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;flex:none}
+.chip{font:inherit;font-size:13px;font-weight:500;border:1px solid var(--line);background:#fff;color:var(--ink);padding:7px 13px;border-radius:999px;cursor:pointer;transition:.15s;display:inline-flex;gap:7px;align-items:center}
+.chip i{font-style:normal;font-size:11.5px;color:var(--muted);background:#f1eee7;border-radius:999px;padding:1px 7px}
+.chip:hover{border-color:#c9c2b2}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.on i{background:rgba(255,255,255,.18);color:#fff}
+.search{position:relative}
+.search{flex:none}
+.search input{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px 9px 36px;width:220px;outline:none}
+.search input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(14,42,71,.1)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+
+/* ---------- sections ---------- */
+main{padding:34px 0 60px}
+section.grp{margin-bottom:44px}
+.grp-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.grp-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:15px;flex:none;box-shadow:0 6px 16px -6px var(--c)}
+.grp-head h2{font-family:"Source Serif 4",Georgia,serif;font-size:23px;margin:0;line-height:1.2}
+.grp-head p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.grp-head .count{margin-left:auto;font-size:13px;font-weight:600;color:var(--c);background:color-mix(in srgb,var(--c) 10%,#fff);border:1px solid color-mix(in srgb,var(--c) 25%,#fff);padding:4px 11px;border-radius:999px;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 18px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--c),color-mix(in srgb,var(--c) 45%,var(--gold)))}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -14px rgba(14,42,71,.28);border-color:color-mix(in srgb,var(--c) 30%,var(--line))}
+.top{display:flex;gap:12px;align-items:flex-start}
+.mono{width:40px;height:40px;border-radius:10px;flex:none;display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--c);background:color-mix(in srgb,var(--c) 10%,#fff);border:1px solid color-mix(in srgb,var(--c) 22%,#fff)}
+.card h3{font-size:16.5px;line-height:1.35;margin:0;font-weight:650}
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-top:5px;font-size:13px;color:var(--muted)}
+.meta .iss{font-weight:600;color:var(--c)}
+.meta .dot{width:3px;height:3px;border-radius:50%;background:#b8b2a4}
+.desc{font-size:14px;color:#3b4354;margin:14px 0 12px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tags span{font-size:11.5px;font-weight:500;padding:3px 9px;border-radius:6px;background:#f3f1ec;color:#4a5263;border:1px solid #ebe7de}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font:inherit;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:9px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:.15s}
+.btn svg{width:15px;height:15px}
+.btn.view{background:var(--c);color:#fff}
+.btn.view:hover{filter:brightness(1.1)}
+.btn.verify{border-color:color-mix(in srgb,var(--c) 35%,#fff);color:var(--c);background:#fff}
+.btn.verify:hover{background:color-mix(in srgb,var(--c) 7%,#fff)}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+
+/* ---------- lightbox ---------- */
+.lb{position:fixed;inset:0;background:rgba(10,20,34,.82);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;backdrop-filter:blur(3px)}
+.lb.open{display:flex}
+.lb figure{margin:0;max-width:min(1000px,96vw);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
+.lb img{display:block;width:100%;height:auto;max-height:78vh;object-fit:contain;background:#f3f1ec}
+.lb figcaption{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 16px;font-size:14px;font-weight:600}
+.lb figcaption a{font-size:13px;color:var(--navy)}
+.lb .x{position:absolute;top:16px;right:20px;width:42px;height:42px;border-radius:50%;border:none;background:rgba(255,255,255,.15);color:#fff;font-size:24px;cursor:pointer}
+
+/* hover polish */
+.btn{transition:transform .2s var(--ease),filter .2s,background .2s}
+.btn:hover{transform:translateX(3px)}
+.tags span{transition:transform .2s var(--ease)}
+.tags span:hover{transform:translateY(-2px)}
+.mono{transition:transform .3s var(--ease)}
+.card:hover .mono{transform:rotate(-6deg) scale(1.06)}
+.grp-icon{transition:transform .35s var(--ease)}
+.grp-head:hover .grp-icon{transform:rotate(-8deg) scale(1.06)}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  
+  .photo{order:-1}
+}
+@media (max-width:640px){
+  header.hero{padding:34px 0 30px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .photo{order:-1;width:260px;height:285px}
+  .contact a{flex:1 1 100%}
+  .toolbar .wrap{flex-direction:column;align-items:stretch;gap:10px}
+  .search input{width:100%}
+  .search{width:100%}
+  .grid{grid-template-columns:1fr}
+  .grp-head .count{display:none}
+}
+
+header.hero::after{opacity:.5}
+.stat{background:rgba(10,29,51,.75);border-color:rgba(217,178,95,.35)}
+.stat .n{color:#fff}
+.contact{gap:8px}
+.contact a{padding:6px 12px 6px 6px;gap:8px}
+.contact .ic{width:28px;height:28px;border-radius:8px}
+.contact .ic svg{width:14px;height:14px}
+.contact span.v{font-size:12.5px;white-space:nowrap}
+.contact small{white-space:nowrap}
+.contact small{font-size:10px}
+.contact a.c1 img{width:34px;height:34px}
+
+.c1stat{display:flex;align-items:center;gap:12px;padding:8px 18px 8px 10px}
+.c1stat img{width:54px;height:54px;transition:transform .5s var(--ease)}
+.c1stat:hover img{transform:rotate(-12deg) scale(1.1)}
+.c1{position:absolute;left:-30px;bottom:-48px;z-index:2;display:flex;align-items:center;gap:10px;background:#fff;color:#2a1b52;border-radius:16px;padding:8px 14px 8px 8px;
+  box-shadow:0 18px 36px -16px rgba(0,0,0,.55);transition:transform .35s var(--ease)}
+.c1 img{width:56px;height:56px;transition:transform .5s var(--ease)}
+.c1 b{display:block;font-size:14px;font-weight:800;line-height:1.15}
+.c1 span{font-size:11.5px;color:#6b5a8e}
+.c1:hover{transform:translateY(-4px)}
+.c1:hover img{transform:rotate(-10deg) scale(1.08)}
+@media (max-width:900px){.c1{bottom:-50px;left:-14px}.photo{margin-bottom:40px}}
+@media (min-width:901px){
+  .hero .wrap{max-width:none;padding:0 clamp(28px,4vw,64px)}
+  .hero-grid{grid-template-columns:minmax(0,620px) 1fr 360px;gap:24px}
+  .hero-grid>.photo{grid-column:3}
+}
+/* slightly larger type */
+body{font-size:16px}
+h1{font-size:clamp(36px,5.2vw,60px)}
+.who{font-size:22px}
+.dept{font-size:16.5px}
+.eyebrow{font-size:13.5px}
+.focus span{font-size:13.5px;padding:6px 13px}
+.stat .n{font-size:32px}
+.stat .l{font-size:13px}
+.contact span.v{font-size:14px}
+.contact small{font-size:11px}
+.c1 b{font-size:15.5px}.c1 span{font-size:12.5px}
+.chip{font-size:14px}
+.search input{font-size:14.5px}
+.grp-head h2{font-size:26px}
+.grp-head p{font-size:15px}
+.card h3{font-size:18px}
+.meta{font-size:14px}
+.desc{font-size:15px}
+.tags span{font-size:12.5px}
+.btn{font-size:14px}
+footer{font-size:14px}
+@media (min-width:901px){.hero-grid{grid-template-columns:minmax(0,680px) 1fr 360px}}
+.ic.wa{background:#25d366}.ic.call{background:#d9b25f;color:#1b2433}
+.contact .brk{flex-basis:100%;height:0}
+@media (max-width:900px){.contact .brk{display:none}}
+@media (min-width:901px){.contact{flex-wrap:nowrap;gap:8px}.contact a{flex:0 1 auto;min-width:0}.contact span.v{overflow:hidden;text-overflow:ellipsis}}
+@media (min-width:901px) and (max-width:1400px){.contact a{padding:5px 10px 5px 5px;gap:7px}.contact .ic{width:26px;height:26px}.contact span.v{font-size:12.5px}.contact small{font-size:10px}}
+
+/* ================= MINIMAL (Integron style) ================= */
+:root{--navy:#1d2f52;--amber:#ffc24d;--coral:#ff9a5c;--bg:#faf9f6;--ink:#1c2333}
+body{background:var(--bg)}
+h1,.grp-head h2,.stat .n,.lb figcaption,#end b{font-family:Manrope,system-ui,sans-serif !important}
+.topnav{position:sticky;top:0;z-index:40;background:#17264a;color:#fff}
+.topnav .wrap{max-width:none;padding:0 clamp(28px,4vw,64px);height:58px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;text-decoration:none;color:#fff}
+.dots{display:flex;gap:5px}.dots i{width:10px;height:10px;border-radius:50%;display:block;background:#3b82c4}.dots i:nth-child(2){background:#e0423a}.dots i:nth-child(3){background:#f6c34a}
+.tl{display:flex;gap:28px}.tl a{color:#d7deea;text-decoration:none;font-size:15.5px;font-weight:500;transition:color .2s}.tl a:hover{color:var(--amber)}
+header.hero{background:var(--navy) !important;padding:64px 0 120px}
+header.hero::after{display:none}
+.eyebrow{color:#9fb3d1;font-size:13px}.eyebrow::before{background:var(--amber)}
+h1{font-weight:800 !important;letter-spacing:-.035em;font-size:clamp(40px,5.6vw,66px) !important;line-height:1.05;margin:14px 0 18px}
+h1 em{background:none !important;-webkit-text-fill-color:initial;color:var(--amber) !important;font-style:normal}
+h1 em{background:linear-gradient(90deg,var(--amber),var(--coral)) !important;-webkit-background-clip:text !important;background-clip:text !important;color:transparent !important}
+.lede{font-size:19px;line-height:1.65;color:#cfd8e6;max-width:640px;margin:0 0 28px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.cta a{font-weight:700;font-size:16px;text-decoration:none;padding:14px 24px;border-radius:10px;transition:transform .25s var(--ease),box-shadow .25s,background .25s}
+.cta .b1{background:var(--amber);color:#1b2433;box-shadow:0 12px 26px -14px rgba(255,194,77,.8)}
+.cta .b1:hover{transform:translateY(-3px);box-shadow:0 18px 30px -14px rgba(255,194,77,.9)}
+.cta .b2{border:1px solid rgba(255,255,255,.35);color:#fff}
+.cta .b2:hover{background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.focus span{background:transparent !important;border:1px solid rgba(255,255,255,.28) !important;color:#e6ecf5 !important;font-weight:500 !important}
+.focus span:hover{border-color:var(--amber) !important;background:rgba(255,194,77,.08) !important}
+.photo .glow{background:linear-gradient(135deg,var(--amber),var(--coral)) !important;opacity:.85}
+.contact{border-top:1px solid rgba(255,255,255,.12);margin-top:40px}
+.contact a{background:transparent !important;border:1px solid rgba(255,255,255,.2) !important}
+.contact a:hover{border-color:var(--amber) !important;background:rgba(255,255,255,.05) !important}
+.ic.call{background:var(--amber)}
+/* stat band */
+.statband{margin-top:-78px;position:relative;z-index:5}
+.statband .wrap{max-width:1200px}
+.statband .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:0}
+.statband .stat{background:#fff !important;border:1px solid #ece8df !important;border-radius:16px;padding:24px 24px 22px;position:relative;overflow:hidden;box-shadow:0 18px 40px -26px rgba(29,47,82,.45);min-width:0;backdrop-filter:none}
+.statband .stat::before{content:"";position:absolute;left:0;right:0;top:0;height:5px}
+.s1::before{background:#3b82c4}.s2::before{background:#e0423a}.s3::before{background:#f6c34a}.s4::before{background:#6fc2a5}
+.statband .stat .n{font-size:40px !important;font-weight:800;color:#1c2333 !important;letter-spacing:-.03em}
+.statband .stat .l{font-size:15px !important;color:#6b7384 !important;margin-top:8px;line-height:1.5}
+.statband .stat:hover{transform:translateY(-5px);border-color:#e1dbcf !important}
+.toolbar{background:rgba(250,249,246,.94) !important;margin-top:34px;top:58px !important}
+html{scroll-padding-top:130px}
+.grp-head h2{font-weight:800 !important;letter-spacing:-.02em;font-size:30px !important}
+.grp-head p{font-size:15px}
+.grp-head::before{content:attr(data-k);display:none}
+.card{border-color:#ece8df !important;box-shadow:0 10px 26px -22px rgba(29,47,82,.4)}
+.card h3{font-weight:800 !important}
+@media (max-width:900px){
+  .tl{display:none}
+  .lede{font-size:16.5px}
+  header.hero{padding:40px 0 100px}
+  .statband .stats{grid-template-columns:1fr 1fr;gap:12px}
+  .statband .stat .n{font-size:30px !important}
+}
+.memo{padding:44px 0 6px}
+.memo-head span{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#3b82c4;margin-bottom:14px}
+.memo-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.memo-card.lab .memo-img{background-image:url(assets/lab/supplement-jars.jpg)}
+.memo-card{display:grid;grid-template-columns:1fr 1fr;border-radius:18px;overflow:hidden;text-decoration:none;background:#1d2f52;color:#fff;box-shadow:0 20px 44px -26px rgba(29,47,82,.6);transition:transform .35s var(--ease)}
+.memo-card:hover{transform:translateY(-5px)}
+.memo-img{min-height:200px;background:url(assets/memories/innovation-fair-2026.jpg) center 40%/cover;transition:transform .8s var(--ease)}
+.memo-card:hover .memo-img{transform:scale(1.04)}
+.memo-txt{padding:24px 26px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.memo-txt .mk{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#ffc24d}
+.memo-txt b{font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.memo-txt span:last-child{color:#cfd8e6;font-size:15.5px}
+@media (max-width:860px){.memo-grid{grid-template-columns:1fr}.memo-img{min-height:180px}}
+/* contact: mature, borderless */
+.contact{display:grid !important;grid-template-columns:1.15fr 1.6fr 1fr 1.1fr .95fr .8fr;gap:10px !important;border-top:none !important;margin-top:36px !important;padding-top:0 !important;flex-wrap:initial !important}
+.contact a{background:rgba(255,255,255,.055) !important;border:none !important;border-radius:12px;padding:10px 12px !important;gap:10px !important;min-width:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.contact a:hover{background:rgba(255,255,255,.1) !important;box-shadow:inset 0 -2px 0 var(--amber) !important}
+.contact a>span:last-child{min-width:0}
+.contact span.v{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;font-size:13.5px !important}
+.contact small{color:#8fa2bf !important;letter-spacing:.06em}
+.contact .ic{width:32px !important;height:32px !important;border-radius:9px !important}
+@media (max-width:1480px){.contact{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:700px){.contact{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="topnav"><div class="wrap">
+  <a class="brand" href="index.html"><span class="dots"><i></i><i></i><i></i></span>Md. Al Hadi Islam</a>
+  <div class="tl"><a href="index.html">Home</a><a href="index.html#publication">Publication</a><a href="index.html#metagenomics">Metagenomics</a><a href="index.html#tools">Problem solving</a><a href="#all">Training</a><a href="#contact">Contact</a></div>
+</div></nav>
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Md. Al Hadi Islam · Microbiology, JUST</span>
+        <h1>Professional <em>Training.</em></h1>
+        <p class="lede">Courses and credentials I completed alongside my microbiology studies at Jashore University of Science and Technology — data science with Python, Linux and cloud, generative AI, and advanced English communication. This catalogue is being expanded as remaining certificates are digitised.</p>
+        <div class="cta"><a class="b1" href="#all">View certificates →</a><a class="b2" href="https://www.linkedin.com/in/md-al-hadi-islam" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+        <div class="focus"><span>Metagenomics</span><span>Probiotics</span><span>Prebiotics</span><span>WGS</span><span>AMR</span><span>Docking &amp; MD</span><span>Data Science</span></div>
+      </div>
+      <div class="photo">
+        <div class="glow"></div>
+        <div class="frame"><img src="assets/profile-smile.jpg" alt="Md. Al Hadi Islam"></div>
+        <div class="c1"><img src="assets/british-council-c1.png" alt="British Council C1 badge"><div><b>English C1</b><span>British Council · Advanced</span></div></div>
+      </div>
+    </div>
+
+    <nav class="contact" id="contact" aria-label="Contact">
+      <a href="mailto:hadirownok@gmail.com"><span class="ic mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><span class="v">hadirownok@gmail.com</span></span></a>
+      <a href="mailto:200335.mb@student.just.edu.bd"><span class="ic uni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><span><small>University email</small><span class="v">200335.mb@student.just.edu.bd</span></span></a>
+      <a href="https://wa.me/8801740724089" target="_blank" rel="noopener"><span class="ic wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.68L.57 23.3l5.68-1.49a11.3 11.3 0 0 0 5.78 1.6h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.89-3.34-8.04z"/></svg></span><span><small>WhatsApp</small><span class="v">+880 1740-724089</span></span></a>
+      <a href="https://www.linkedin.com/in/md-al-hadi-islam" target="_blank" rel="noopener"><span class="ic li"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span><span><small>LinkedIn</small><span class="v">in/md-al-hadi-islam</span></span></a>
+      <a href="https://www.researchgate.net/profile/Md-Islam-3306" target="_blank" rel="noopener"><span class="ic rg"><span class="rgtxt">R<sup>G</sup></span></span><span><small>ResearchGate</small><span class="v">Md-Islam-3306</span></span></a>
+      <a href="https://github.com/HadiRownok" target="_blank" rel="noopener"><span class="ic gh"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg></span><span><small>GitHub</small><span class="v">HadiRownok</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="statband"><div class="wrap"><div class="stats">
+  <div class="stat s1"><div class="n">26</div><div class="l">certificates catalogued so far — more being added</div></div>
+  <div class="stat s2"><div class="n">11</div><div class="l">issuing organizations, from IBM to the British Council</div></div>
+  <div class="stat s3"><div class="n">4</div><div class="l">IBM credentials in Python, Linux and cloud</div></div>
+  <div class="stat s4"><div class="n">C1</div><div class="l">advanced English, British Council English Online</div></div>
+</div></div></section>
+<section class="memo"><div class="wrap"><div class="memo-head"><span>Beyond the certificates</span></div><div class="memo-grid">
+<a class="memo-card" href="memories.html"><div class="memo-img"></div>
+  <div class="memo-txt"><span class="mk">Memories · 2026</span><b>Bangladesh Innovation Fair 2026</b><span>JUST — Champion. See the photos →</span></div></a>
+<a class="memo-card lab" href="research.html"><div class="memo-img"></div>
+  <div class="memo-txt"><span class="mk">Research · Lab work</span><b>Prebiotic Formulation</b><span>From plant to an organic, AMR-free supplement →</span></div></a>
+</div></div></section>
+<div class="toolbar" id="all">
+  <div class="wrap">
+    <div class="chips" id="chips"></div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search course, skill or issuer" aria-label="Search certificates">
+    </label>
+  </div>
+</div>
+
+<main>
+  <div class="wrap" id="root"></div>
+  <div class="wrap empty" id="empty">No certificates match your search.</div>
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <span>© Md. Al Hadi Islam · Jashore, Bangladesh</span>
+    <span>Last updated: November 2026</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="x" aria-label="Close" onclick="closeLb()">×</button>
+  <figure><img id="lbimg" alt=""><figcaption><span id="lbcap"></span><a id="lbopen" target="_blank" rel="noopener">Open full size ↗</a></figcaption></figure>
+</div>
+
+<script>
+const DATA = [{"g": "ibm", "t": "Linux Commands & Shell Scripting Essentials", "i": "IBM | Coursera", "date": "Mar 23, 2025", "desc": "Linux command line, file and process management, and Bash scripting to automate repetitive tasks and pipelines.", "tags": ["Linux", "Bash", "Automation"], "cat": "cloud", "f": "ibm-linux-shell-scripting.png", "v": null}, {"g": "ibm", "t": "Introduction to Cloud Computing", "i": "IBM | Coursera", "date": "Mar 22, 2025", "desc": "Core cloud concepts, service models (IaaS, PaaS, SaaS), deployment models and the cloud ecosystem.", "tags": ["Cloud", "IaaS / PaaS / SaaS"], "cat": "cloud", "f": "ibm-intro-to-cloud-computing.png", "v": null}, {"g": "ibm", "t": "Data Analysis with Python", "i": "IBM | Coursera", "date": "Mar 21, 2025", "desc": "Data wrangling, exploratory data analysis and model development using pandas, NumPy and scikit-learn.", "tags": ["Python", "pandas", "scikit-learn", "EDA"], "cat": "data", "f": "ibm-data-analysis-with-python.png", "v": null}, {"g": "ibm", "t": "Data Visualization with Python", "i": "IBM | Coursera", "date": "Mar 06, 2025", "desc": "Built informative charts and interactive dashboards in Python using Matplotlib, Seaborn, Folium and Plotly.", "tags": ["Python", "Matplotlib", "Seaborn", "Dashboards"], "cat": "data", "f": "ibm-data-visualization-with-python.pdf", "v": "https://www.credly.com/badges/1467f94f-3ff0-4b47-88af-0709ea6b5a11"}, {"g": "bc", "t": "Yesterday, Today and Tomorrow — Level C1", "i": "British Council", "date": "Mar 09, 2025", "desc": "36-hour module on memories, technology and social media, future predictions, and opinion writing.", "tags": ["C1 English", "Writing"], "cat": "english", "f": "bc-yesterday-today-and-tomorrow.pdf", "v": null}, {"g": "bc", "t": "Recreation and Relaxation — Level C1", "i": "British Council", "date": "Mar 05, 2025", "desc": "36-hour module on travel, culture and music with focus on coherent, well-argued writing.", "tags": ["C1 English", "Writing"], "cat": "english", "f": "bc-recreation-and-relaxation.pdf", "v": null}, {"g": "bc", "t": "The World Around Us — Level C1", "i": "British Council", "date": "Feb 28, 2025", "desc": "36-hour module on global employment, online education and social change.", "tags": ["C1 English", "Discussion"], "cat": "english", "f": "bc-the-world-around-us.pdf", "v": null}, {"g": "bc", "t": "Product Research and Development — Level C1", "i": "British Council", "date": "Feb 25, 2025", "desc": "36-hour Business English module on technical processes, supply chains and competitor research.", "tags": ["Business English", "C1"], "cat": "english", "f": "bc-product-research-and-development.pdf", "v": null}, {"g": "bc", "t": "People and Events — Level C1", "i": "British Council", "date": "Feb 19, 2025", "desc": "36-hour Business English module on negotiation, client communication and project planning.", "tags": ["Business English", "Negotiation"], "cat": "english", "f": "bc-people-and-events.pdf", "v": null}, {"g": "bc", "t": "Changing and Growing a Business — Level C1", "i": "British Council", "date": "Feb 16, 2025", "desc": "36-hour Business English module on managing change, new markets and persuasive communication.", "tags": ["Business English", "C1"], "cat": "english", "f": "bc-changing-and-growing-a-business.pdf", "v": null}, {"g": "bc", "t": "English Online — Certificate of Attendance", "i": "British Council", "date": null, "desc": "Completed the British Council English Online self-study programme at Advanced (C1) level.", "tags": ["C1 English"], "cat": "english", "f": "bc-english-online-attendance.pdf", "v": null}, {"g": "pro", "t": "AI+ Prompt Engineer Level 1™", "i": "AI CERTs", "date": "Jun 27, 2025", "desc": "Prompt-engineering fundamentals for generative AI: prompt design, iteration and responsible use of LLMs.", "tags": ["Generative AI", "Prompt Engineering"], "cat": "ai", "f": "aicerts-prompt-engineer-level1.png", "v": null}, {"g": "pro", "t": "Canva for Work", "i": "Canva Design School", "date": "Jun 13, 2025", "desc": "Visual communication, presentation design, data visualisation & storytelling, and team workflow.", "tags": ["Visual Design", "Presentation"], "cat": "design", "f": "canva-for-work.png", "v": null}, {"g": "pro", "t": "Presenting Data", "i": "HP LIFE", "date": "Mar 16, 2025", "desc": "Creating effective charts in spreadsheet software and choosing the right chart to convey information.", "tags": ["Data Visualization", "Spreadsheets"], "cat": "data", "f": "hp-presenting-data.pdf", "v": null}, {"g": "pro", "t": "Introduction to Cybersecurity", "i": "Cisco Networking Academy", "date": "Mar 15, 2025", "desc": "Online safety, common cyber threats and vulnerabilities, and how organizations defend against attacks.", "tags": ["Cybersecurity", "Networking"], "cat": "cloud", "f": "cisco-intro-to-cybersecurity.pdf", "v": null}, {"g": "pro", "t": "ChatGPT for Everyone", "i": "Learn Prompting", "date": "Mar 15, 2025", "desc": "How large language models work and how to apply ChatGPT effectively to everyday and research tasks.", "tags": ["Generative AI", "ChatGPT"], "cat": "ai", "f": "learnprompting-chatgpt-for-everyone.pdf", "v": null}, {"g": "pro", "t": "Digital Literacy", "i": "Futurenation", "date": "Mar 12, 2025", "desc": "Essential digital skills for using computers, the internet and online tools safely and productively.", "tags": ["Digital Skills"], "cat": "design", "f": "futurenation-digital-literacy.pdf", "v": null}, {"g": "pro", "t": "Data Analysis with Excel", "i": "Futurenation", "date": "Mar 11, 2025", "desc": "Organizing, cleaning and summarizing data with Excel formulas, functions, pivot tables and charts.", "tags": ["Excel", "Data Analysis"], "cat": "data", "f": "futurenation-data-analysis-with-excel.pdf", "v": null}, {"g": "prog", "t": "Overseas Education and Career Guidance Workshop", "i": "Pathakbondhu | Ajker Patrika", "date": "Feb 21, 2025", "desc": "10-day workshop on studying abroad, university applications, scholarships and career planning.", "tags": ["Higher Study", "Career"], "cat": "career", "f": "pathakbondhu-overseas-education-workshop.pdf", "v": null}, {"g": "prog", "t": "Study Abroad Program", "i": "BYSDO | Edvoy", "date": null, "desc": "Study Abroad Program by Bangladesh Youth Skills Development Organization in partnership with Edvoy.", "tags": ["Higher Study"], "cat": "career", "f": "bysdo-study-abroad-program.pdf", "v": null}, {"g": "tms", "t": "Basics of Management", "i": "10 Minute School", "date": "Mar 17, 2025", "desc": "Fundamentals of planning, organizing, leading and controlling in an organization.", "tags": ["Management"], "cat": "career", "f": "10ms-basics-of-management.pdf", "v": null}, {"g": "tms", "t": "News Presentation", "i": "10 Minute School", "date": "Mar 16, 2025", "desc": "Vocal technique, pronunciation, on-camera presence and newsroom operations.", "tags": ["Public Speaking"], "cat": "english", "f": "10ms-news-presentation.pdf", "v": null}, {"g": "tms", "t": "Communication Hacks", "i": "10 Minute School", "date": "Mar 15, 2025", "desc": "Practical techniques for clear, confident and effective communication.", "tags": ["Communication"], "cat": "english", "f": "10ms-communication-hacks.pdf", "v": null}, {"g": "tms", "t": "CV Writing & Interview", "i": "10 Minute School", "date": "Mar 13, 2025", "desc": "Writing a strong CV and preparing for professional and academic interviews.", "tags": ["Career"], "cat": "career", "f": "10ms-cv-writing-and-interview.pdf", "v": null}, {"g": "tms", "t": "Communication Secrets", "i": "10 Minute School", "date": "Mar 13, 2025", "desc": "Principles of persuasive and impactful communication in professional settings.", "tags": ["Communication"], "cat": "english", "f": "10ms-communication-secrets.pdf", "v": null}, {"g": "tms", "t": "Email Writing", "i": "10 Minute School", "date": "Mar 13, 2025", "desc": "Writing clear, professional and well-structured academic and workplace emails.", "tags": ["Professional Writing"], "cat": "english", "f": "10ms-email-writing.pdf", "v": null}];
+const SECTIONS = [["ibm", "IBM Skills Network · Coursera", "Data science, cloud and Linux credentials"], ["bc", "British Council · English Online", "Advanced (C1) Business & General English"], ["pro", "Professional & Technical Courses", "AI, cybersecurity, data and digital skills"], ["prog", "Workshops & Programs", "Higher-study and career development"], ["tms", "10 Minute School", "Communication, career and management skills"]];
+const COLORS = {ibm:"var(--ibm)",bc:"var(--bc)",pro:"var(--pro)",prog:"var(--prog)",tms:"var(--tms)"};
+const ICON = {ibm:"IBM",bc:"BC",pro:"PRO",prog:"WS",tms:"10"};
+const CATS = [["all","All"],["data","Data Science"],["cloud","Linux, Cloud & Security"],["ai","Generative AI"],["english","English & Communication"],["career","Career & Management"],["design","Design & Digital"]];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mono = i => { const w = i.split("|")[0].trim().split(/\s+/); return /^\d/.test(w[0]) ? "10" : (w.length>1 ? w[0][0]+w[1][0] : w[0].slice(0,3)).toUpperCase(); };
+const ext = f => f.split(".").pop().toLowerCase();
+
+let cat = "all", q = "";
+
+function renderChips(){
+  document.getElementById("chips").innerHTML = CATS.map(([k,l]) => {
+    const n = k==="all" ? DATA.length : DATA.filter(c=>c.cat===k).length;
+    return `<button class="chip${k===cat?" on":""}" data-k="${k}">${l}<i>${n}</i></button>`;
+  }).join("");
+  document.querySelectorAll(".chip").forEach(b => b.onclick = () => { cat = b.dataset.k; renderChips(); render(); });
+}
+
+function card(c, g){
+  const isImg = ["png","jpg","jpeg","webp"].includes(ext(c.f));
+  const href = "certificates/" + c.f;
+  const view = isImg
+    ? `<button class="btn view" onclick="openLb('${href}', '${esc(c.t).replace(/'/g,"&#39;")}')">`
+    : `<a class="btn view" href="${href}" target="_blank" rel="noopener">`;
+  const viewEnd = isImg ? "</button>" : "</a>";
+  return `<article class="card" style="--c:${COLORS[g]}">
+    <div class="top"><div class="mono">${mono(c.i)}</div>
+      <div><h3>${esc(c.t)}</h3>
+      <div class="meta"><span class="iss">${esc(c.i.replace(" | "," · "))}</span>${c.date?`<span class="dot"></span><span>${c.date}</span>`:""}</div></div></div>
+    <p class="desc">${esc(c.desc)}</p>
+    <div class="tags">${c.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>
+    <div class="actions">${view}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>View Certificate${viewEnd}
+    ${c.v?`<a class="btn verify" href="${c.v}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>Verify on Credly</a>`:""}</div>
+  </article>`;
+}
+
+function render(){
+  const s = q.toLowerCase();
+  const match = c => (cat==="all"||c.cat===cat) && (!s || [c.t,c.i,c.desc,...c.tags].join(" ").toLowerCase().includes(s));
+  let total = 0;
+  document.getElementById("root").innerHTML = SECTIONS.map(([g,title,sub]) => {
+    const items = DATA.filter(c => c.g===g && match(c));
+    total += items.length;
+    if(!items.length) return "";
+    return `<section class="grp" id="${g}" style="--c:${COLORS[g]}">
+      <div class="grp-head"><div class="grp-icon" style="background:${COLORS[g]}">${ICON[g]}</div>
+        <div><h2>${title}</h2><p>${sub}</p></div><span class="count">${items.length} certificate${items.length>1?"s":""}</span></div>
+      <div class="grid">${items.map(c=>card(c,g)).join("")}</div></section>`;
+  }).join("");
+  document.getElementById("empty").style.display = total ? "none" : "block";
+}
+
+function openLb(src, cap){
+  document.getElementById("lbimg").src = src;
+  document.getElementById("lbimg").alt = cap;
+  document.getElementById("lbcap").innerHTML = cap;
+  document.getElementById("lbopen").href = src;
+  document.getElementById("lb").classList.add("open");
+}
+function closeLb(){ document.getElementById("lb").classList.remove("open"); }
+document.getElementById("lb").addEventListener("click", e => { if(e.target.id==="lb") closeLb(); });
+document.addEventListener("keydown", e => { if(e.key==="Escape") closeLb(); });
+document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim(); render(); });
+
+renderChips(); render();
+</script>
+</body>
+</html>
